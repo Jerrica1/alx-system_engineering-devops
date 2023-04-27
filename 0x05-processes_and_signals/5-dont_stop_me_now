@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Author: Jerrica Jackson
-# Aborts the entire process of 4-to_infinity_and_beyond.
+# Kills the entire process of 4-to_infinity_and_beyond.
 
-abort "$(pgrep -f 4-to_infinity_and_beyond)"
+kills "$(pgrep -f 4-to_infinity_and_beyond)"
