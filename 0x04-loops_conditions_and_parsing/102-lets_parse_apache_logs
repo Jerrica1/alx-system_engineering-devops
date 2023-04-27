@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
 # Author: Jerrica Jackson
-# displays the visitor IP along with the HTTP status code from the Apache log file.
-filename="apache-access.log"
-
-awk -v FPAT='([^ ]*)|("[^"]*")' '{print $1,$7}' $filename
+#Script that parses Apache logs
+awk -F' ' '{ print $1 " " $9 }' apache-access.log
