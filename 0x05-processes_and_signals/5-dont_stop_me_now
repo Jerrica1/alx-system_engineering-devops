@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# Author: Jerrica Jackson
-# Kills the entire process of 4-to_infinity_and_beyond.
+#bash script that stops 4-to_infinity_and_beyond
 
-kills "$(pgrep -f 4-to_infinity_and_beyond)"
+pgrep -f 4-to_infinity_and_beyond | xargs kill
