@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
-# Print 10 times Holberton School with While Loop
+#Script that prints Best School 10 times using a while loop
 
 i=1
-while [ $i -le 10 ]
-do
-  echo "Holberton School"
-  ((i++))
+while [ $i -le 10 ]; do
+	echo "Best School"
+	((i+=1))
 done
