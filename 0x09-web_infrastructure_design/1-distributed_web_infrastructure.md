@@ -9,7 +9,7 @@
 This is a distributed web infrastructure that atttempts to reduce the traffic to the primary server by distributing some of the load to a replica server with the aid of a server responsible for balancing the load between the two servers (primary and replica).
 
 ## Specifics About This Infrastructure
-+ A server containing a web seerver, application server, database, and code base so that there is redundancy with the other server.
++ A server containing a web server, application server, database, and code base so that there is redundancy with the other server.
 
 + The distribution algorithm, How the load balancer is configured with and how it works.
 <br/>The HAProxy load balancer is configured with the *Round Robin* distribution algorithm.
