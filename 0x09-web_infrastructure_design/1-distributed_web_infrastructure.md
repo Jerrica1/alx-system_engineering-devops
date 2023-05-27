@@ -1,6 +1,6 @@
 # Distributed Web Infrastructure
 
-![Image of a distributed web infrastructure](1-distributed_web_infrastructure.png)
+![Image of a distributed web infrastructure](1-distrubuted_web_infrastructure.png)
 
 [Visit Board](https://app.diagrams.net/#HJerrica1%2Falx-system_engineering-devops%2Fmaster%2FUntitled%20Diagram.drawio)
 
