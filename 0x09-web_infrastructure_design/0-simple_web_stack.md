@@ -1,4 +1,4 @@
-<https://github.com/Jerrica1/alx-system_engineering-devops/blob/master/0x09-web_infrastructure_design/0-simple_web_stack.jpg>
+<https://github.com/Jerrica1/alx-system_engineering-devops/blob/master/0x09-web_infrastructure_design/0-simple_web_stack.png>
 
 # Simple Web Stack
 
