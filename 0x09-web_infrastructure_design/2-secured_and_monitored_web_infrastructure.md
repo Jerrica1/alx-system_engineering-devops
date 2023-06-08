@@ -9,11 +9,11 @@
 + This is a 3-server web infrastructure that is secured, monitored, and serves encrypted traffic.
 <br/> Firewall filters network tarffic in and out a machine
 
-<br/> HTTPS is setup so that if someone intercepts the ttraffic, it cannot be read.
+<br/> HTTPS is setup so that if someone intercepts the traffic, it cannot be read.
 
 <br/> Mointoring can be used to check if somthing is broken or slow.
 
-<br/> The monitoring setup is composed of a client collecting and sending data and sending it to the monitoring syatem.
+<br/> The monitoring setup is composed of a client collecting and sending data and sending it to the monitoring system.
 
 <br/> Configure monitoring to:collect web server data and have an alert triggered if **QPS** is getting out of control.
 
