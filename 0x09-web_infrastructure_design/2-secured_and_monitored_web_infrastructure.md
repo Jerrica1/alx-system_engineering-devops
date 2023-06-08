@@ -11,7 +11,7 @@
 
 <br/> HTTPS is setup so that if someone intercepts the traffic, it cannot be read.
 
-<br/> Mointoring can be used to check if somthing is broken or slow.
+<br/> Monitoring can be used to check if somthing is broken or slow.
 
 <br/> The monitoring setup is composed of a client collecting and sending data and sending it to the monitoring system.
 
