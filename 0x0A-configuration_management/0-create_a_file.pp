@@ -1,5 +1,5 @@
-# create file with certain requirements
-file { '/tmp/holberton':
+#creates a file
+file {'/tmp/holberton':
   ensure  => file,
   path    => '/tmp/holberton',
   mode    => '0744',
