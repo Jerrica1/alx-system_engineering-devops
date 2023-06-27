@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
-# Configures a new ubuntu machine by installing
-# Nginx where it should be listening on port 80
-# Serve a page that would return a Hello World string
-#
+# installs, configers, and starts the nginx server
+
 # colors
 blue='\e[1;34m'
 brown='\e[0;33m'
@@ -31,7 +29,12 @@ cp /var/www/html/index.nginx-debian.html /var/www/html/index.nginx-debian.html.b
 # Creating new index
 echo -e "Hello World!" | dd status=none of=/var/www/html/index.nginx-debian.html
 
+# Creating redirect
+REDIRECT="\n\tlocation /redirect_me {\n\t\treturn 301 https://youtu.be/dQw4w9WgXcQ;\n\t}\n"
+FILE="/etc/nginx/sites-available/default"
+sudo sed -i "37i\ $REDIRECT" "$FILE"
+
 # Restarting nginx
-sudo service nginx restart
+sudo systemctl nginx restart
 
 echo -e "\n${green}Completed.${reset} ✅\n"
