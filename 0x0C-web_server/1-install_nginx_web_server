@@ -1,40 +1,7 @@
 #!/usr/bin/env bash
-# installs, configers, and starts the nginx server
-
-# colors
-blue='\e[1;34m'
-brown='\e[0;33m'
-green='\e[1;32m'
-reset='\033[0m'
-
-echo -e "${blue}Updating and installing ${brown}Nginx${blue}.${reset}\n"
-sudo apt-get update -y -qq && \
-	 sudo apt-get install nginx -y
-
-echo -e "\n${blue}Setting up some minor stuff.${reset}\n"
-
-# starting nginx service
-sudo service nginx start
-
-# allowing nginx on firewall
-sudo ufw allow 'Nginx HTTP'
-
-# Give the user ownership to website files for easy editing
-sudo chown -R "$USER":"$USER" /var/www/html
-sudo chmod -R 755 /var/www
-
-# Backup default index
-cp /var/www/html/index.nginx-debian.html /var/www/html/index.nginx-debian.html.bckp
-
-# Creating new index
-echo -e "Hello World!" | dd status=none of=/var/www/html/index.nginx-debian.html
-
-# Creating redirect
-REDIRECT="\n\tlocation /redirect_me {\n\t\treturn 301 https://youtu.be/dQw4w9WgXcQ;\n\t}\n"
-FILE="/etc/nginx/sites-available/default"
-sudo sed -i "37i\ $REDIRECT" "$FILE"
-
-# Restarting nginx
-sudo systemctl nginx restart
-
-echo -e "\n${green}Completed.${reset} ✅\n"
+#install nginx and redirects to holberton school string
+sudo apt-get -y update
+sudo apt-get -y install nginx
+file1=/usr/share/nginx/html/index.html
+sudo bash -c "echo 'Holberton School ftw!' > $file1"
+service nginx start
