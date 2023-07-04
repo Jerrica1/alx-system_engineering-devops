@@ -2,10 +2,6 @@
 
 ## | DevOps | SysAdmin |
 
-<p align="center">
-  <img src="https://github.com/Jerrica1/0x0F-load_balancer/blob/main/0x0F-load_balancer/images/Udemy_pic1.png" alt="alx_pic1">
-</p>
-
 # Concepts
 For this project, we expect you to look at these concepts:
 * [Load balancer](#load-balancer)
@@ -26,9 +22,7 @@ For this project, we expect you to look at these concepts:
 
 ## Load balancer
 Ever wonder how Facebook, Linkedin, Twitter and other web giants are handling such huge amounts of traffic? They don’t have just one server, but tens of thousands of them. In order to achieve this, web traffic needs to be distributed to these servers, and that is the role of a load-balancer.
-<p align="center">
-  <img src="https://github.com/Ezra-Mallo/0x0F-load_balancer/blob/main/0x0F-load_balancer/images/load_balance.png" alt="alx_pic1">
-</p>
+
 
 * [Load-balancing](https://www.thegeekstuff.com/2016/01/load-balancer-intro/)
 * [Load-balancing algorithms](https://community.f5.com/t5/technical-articles/intro-to-load-balancing-for-developers-the-algorithms/ta-p/273759)
