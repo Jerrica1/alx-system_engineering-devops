@@ -1,26 +1,35 @@
 #!/usr/bin/python3
-# csv exported
+"""python script to fetch Rest API for todo lists of employees"""
+
 import json
-from requests import get
-from sys import argv
+import requests
+import sys
 
 
-def jsonWrite():
-    """writes to csv"""
-    data = get('https://jsonplaceholder.typicode.com/users').json()
-    ids = [(dic.get('id'), dic.get('username')) for dic in data]
-    dumped = {}
-    for person in ids:
-        data = get(
-            'https://jsonplaceholder.typicode.com/todos?userId={}'.format(
-                person[0])).json()
-        ordered = [{"task": line.get('title'), "completed":
-                    line.get('completed'), "username":
-                    person[1]} for line in data]
-        dumped[person[0]] = ordered
+if __name__ == '__main__':
+    url = "https://jsonplaceholder.typicode.com/users"
+
+    resp = requests.get(url)
+    Users = resp.json()
+
+    users_dict = {}
+    for user in Users:
+        USER_ID = user.get('id')
+        USERNAME = user.get('username')
+        url = 'https://jsonplaceholder.typicode.com/users/{}'.format(USER_ID)
+        url = url + '/todos/'
+        resp = requests.get(url)
+
+        tasks = resp.json()
+        users_dict[USER_ID] = []
+        for task in tasks:
+            TASK_COMPLETED_STATUS = task.get('completed')
+            TASK_TITLE = task.get('title')
+            users_dict[USER_ID].append({
+                "task": TASK_TITLE,
+                "completed": TASK_COMPLETED_STATUS,
+                "username": USERNAME
+            })
+            """A little Something"""
     with open('todo_all_employees.json', 'w') as f:
-        json.dump(dumped, f)
-
-
-if __name__ == "__main__":
-    jsonWrite()
+        json.dump(users_dict, f)
