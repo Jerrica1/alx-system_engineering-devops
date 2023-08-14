@@ -9,7 +9,7 @@
 
 3 hours (08:00 AM - 11:00 AM, UTC)
 
-#### Impact: Slowdown of Payment Processing Service, affecting 20% of users, causing delayed transactions and user frustration.
+Impact: Slowdown of Payment Processing Service, affecting 20% of users, causing delayed transactions and user frustration.
 
 Root Cause: Database connection pool exhaustion led to service degradation.
 
