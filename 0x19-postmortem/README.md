@@ -1,7 +1,6 @@
 <p align="center">
-<img src="C:\Users\Jerrica\Downloads\postmortem diagram.png" width=75% height=75%/>
+<img src="0x19-postmortem/postmortem diagram.png" width=75% height=75%/>
 </p>
-
 
 Issue Summary:
 
