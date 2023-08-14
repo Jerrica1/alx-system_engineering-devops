@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="C:\Users\Jerrica\Downloads\postmortem diagram.png" width="75%" height="75%" alt="Image Description">
+  <img src="0x19-postmortem" width="75%" height="75%" alt="Image Description">
 </p>
 
 
