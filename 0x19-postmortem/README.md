@@ -1,6 +1,6 @@
-<p align="center">
-<img src="https://raw.githubusercontent.com/MelissaN/holberton-system_engineering-devops/master/0x19-postmortem/youtube500error.png" width=75% height=75%/>
-</p>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/MelissaN/holberton-system_engineering-devops/master/0x19-postmortem/youtube500error.png" alt="Image Description" width="75%" height="75%">
+</div>
 
 
 ### Issue Summary:
