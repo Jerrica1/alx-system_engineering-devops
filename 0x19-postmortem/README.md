@@ -1,6 +1,5 @@
 <p align="center">
-  <img src="![image](https://github.com/Jerrica1/alx-system_engineering-devops/assets/111321583/c86bcf09-dcf8-4ca3-a331-401865fedea2)
-" width="75%" height="75%" alt="Image Description">
+  <img src="https://github.com/Jerrica1/alx-system_engineering-devops/blob/master/0x19-postmortem/postmortem%20diagram.png" width="75%" height="75%" alt="Image Description">
 </p>
 
 
