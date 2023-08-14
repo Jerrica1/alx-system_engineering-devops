@@ -39,7 +39,7 @@ Implement dynamic scaling of connection pools based on traffic patterns.
 
 #### Tasks to Address the Issue:
 
-Patch database connection pool configurations across all services to prevent future exhaustion.
-Implement proactive monitoring to detect connection pool depletion and potential bottlenecks.
-Set up automated scaling of connection pools based on incoming traffic, reducing the risk of slowdowns during peak times.
+* Patch database connection pool configurations across all services to prevent future exhaustion.
+* Implement proactive monitoring to detect connection pool depletion and potential bottlenecks.
+* Set up automated scaling of connection pools based on incoming traffic, reducing the risk of slowdowns during peak times.
 
